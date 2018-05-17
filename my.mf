@@ -3,6 +3,19 @@ CACHE MANIFEST
 
 CACHE:
 index.html
-images/*.jpg
-js/*.js
-css/*.css
+
+js/jquery.min.js
+js/jquery.dropotron.min.js
+js/jquery.scrolly.min.js
+js/jquery.scrollgress.min.js
+js/skel.min.js
+js/skel-layers.min.js
+js/init.js
+
+images/banner.jpg
+images/pic01.jpg
+images/pic02.jpg
+images/pic03.jpg
+images/pic04.jpg
+
+css/style.css
