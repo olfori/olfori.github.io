@@ -1,8 +1,5 @@
-# One year for image files
-<filesMatch ".(jpg|jpeg|png|gif|ico)$">
-Header set Cache-Control "max-age=31536000, public"
-</filesMatch>
-# One month for css and js
-<filesMatch ".(css|js)$">
-Header set Cache-Control "max-age=2628000, public"
-</filesMatch>
+<IfModule mod_headers.c>
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|eot|woff|otf|ttf|svg)$">
+  Header set Cache-Control "max-age=7889231, public"
+</FilesMatch>
+</IfModule>
