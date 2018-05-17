@@ -1,5 +1,8 @@
 CACHE MANIFEST
+# Версия 1.0
+
+CACHE:
 index.html
-images/banner.jpg
-js/jquery.min.js
-css/style.css
+images/*.jpg
+js/*.js
+css/*.css
