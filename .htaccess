@@ -1,5 +1,10 @@
-<IfModule mod_headers.c>
-<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|eot|woff|otf|ttf|svg)$">
-  Header set Cache-Control "max-age=7889231, public"
-</FilesMatch>
-</IfModule>
+ExpiresActive on
+ExpiresByType image/gif "access plus 6 months"
+ExpiresByType image/png "access plus 6 months"
+ExpiresByType image/jpeg "access plus 6 months"
+ExpiresByType image/x-icon "access plus 9 months"
+ExpiresByType application/x-font-woff "access plus 9 months"
+ExpiresByType text/css "modification plus 6 months"
+ExpiresByType text/javascript "modification plus 6 months"
+ExpiresByType text/html "now"
+ExpiresByType application/xhtml+xml "now"
