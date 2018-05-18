@@ -1,6 +1,5 @@
-
 .dnd-animo, .dnd-animo-children > * {
-    visibility: hidden;
+    //visibility: hidden;
 }
 .dnd_container {
     width: 100%;

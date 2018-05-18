@@ -1,37 +1,20 @@
-/*
-Theme Name: Revelance (Share On Theme123.Net)
-Version: 1.2.1
-Author: ab-themes
-Author URI: http://www.ab-themes.com
-Description: Fully Responsive OnePage Parallax WordPress Theme
-Theme URI: http://themeforest.net/user/ab-themes/portfolio?ref=ab-themes
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: blue, gray, green, orange, pink, purple, red, white, yellow, light, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, responsive-layout, custom-colors, custom-menu, full-width-template, theme-options, translation-ready
-
-  
-
-/*-----------------------------------------------------------------*/
-/* 01. CSS RESET
-/*-----------------------------------------------------------------*/
-
 @font-face {
     font-family: "AGOpus-Normal_";
     font-style: normal;
     font-weight: normal;
-    src: url("/wp-content/fonts/AGOpus-Normal_.eot") format("embedded-opentype"), 
-	url("/wp-content/fonts/AGOpus-Normal_.woff") format("woff"), 
-	url("/wp-content/fonts/AGOpus-Normal_.ttf") format("truetype"), 
-	url("/wp-content/fonts/AGOpus-Normal_.svg") format("svg");
+    src: url("/fonts/AGOpus-Normal_.eot") format("embedded-opentype"), 
+	url("/fonts/AGOpus-Normal_.woff") format("woff"), 
+	url("/fonts/AGOpus-Normal_.ttf") format("truetype"), 
+	url("/fonts/AGOpus-Normal_.svg") format("svg");
 }
 @font-face {
     font-family: "Monotype-Corsiva-Regular";
     font-style: normal;
     font-weight: normal;
-    src: url("/wp-content/fonts/Monotype-Corsiva-Regular.eot") format("embedded-opentype"), 
-	url("/wp-content/fonts/Monotype-Corsiva-Regular.woff") format("woff"), 
-	url("/wp-content/fonts/Monotype-Corsiva-Regular.ttf") format("truetype"), 
-	url("/wp-content/fonts/Monotype-Corsiva-Regular.svg") format("svg");
+    src: url("/fonts/Monotype-Corsiva-Regular.eot") format("embedded-opentype"), 
+	url("/fonts/Monotype-Corsiva-Regular.woff") format("woff"), 
+	url("/fonts/Monotype-Corsiva-Regular.ttf") format("truetype"), 
+	url("/fonts/Monotype-Corsiva-Regular.svg") format("svg");
 }
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, a {
@@ -2260,4 +2243,9 @@ span.one, span.two, span.three {
 .single-post .main_title{display: none;}
 #abdev_main_slider {
     display: none;
+}
+#about{
+    background-color:#f7f4e5;
+    background-image:url(/images/home_03.png);
+    background-position: 50% 0%;
 }
