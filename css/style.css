@@ -242,7 +242,7 @@ strong, .strong {
     font-weight: bold;
 }
 .underlined {
-    background: rgba(0, 0, 0, 0) url("/web/20160205124641/http://www.psihologkiev.com.ua/wp-content/themes/revelance/images/underlined_bg.png") repeat-x scroll center bottom;
+    background: rgba(0, 0, 0, 0) url("/images/underlined_bg.png") repeat-x scroll center bottom;
     display: inline-block;
 }
 .italic {
@@ -359,7 +359,7 @@ th {
     z-index: 1;
 }
 .pattern_overlayed::before {
-    background: rgba(0, 0, 0, 0.75) url("/web/20160205124641/http://www.psihologkiev.com.ua/wp-content/themes/revelance/images/pattern_overlay.png") repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.75) url("/images/pattern_overlay.png") repeat scroll 0 0;
 }
 .color_overlayed::before {
     background: rgba(0, 0, 0, 0.85) none repeat scroll 0 0;
@@ -772,13 +772,13 @@ nav > ul > .current-menu-item > a, nav > ul > .current-post-ancestor > a, nav > 
     transform: rotateY(-100deg);
 }
 .tp-bullets.simplebullets.round .bullet {
-    background-image: url("/web/20160205124641/http://www.psihologkiev.com.ua/wp-content/themes/revelance/images/bullet.png");
+    background-image: url("/images/bullet.png");
 }
 .tp-dottedoverlay {
     z-index: 2;
 }
 .tp-dottedoverlay.twoxtwo {
-    background: rgba(0, 0, 0, 0) url("/web/20160205124641/http://www.psihologkiev.com.ua/wp-content/themes/revelance/images/pattern_overlay.png") repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("/images/pattern_overlay.png") repeat scroll 0 0;
 }
 .tp-bullets.simplebullets.round .bullet {
     background: #999 none repeat scroll 0 0;
@@ -2244,8 +2244,25 @@ span.one, span.two, span.three {
 #abdev_main_slider {
     display: none;
 }
+
 #about{
     background-color:#f7f4e5;
     background-image:url(/images/home_03.png);
     background-position: 50% 0%;
+}
+#top2{
+    background-color:#ffffff;
+    background-image:url(/images/fon2.png);
+    background-position: 50% 0%;
+}
+
+#top3{
+    background-color:#ffffff;
+    background-image:url(/images/fon4.png);
+    background-position: 50% 300%;
+}
+#top4{
+    background-color:#f7f4e5;
+    background-image:url(/images/fon3.png);
+    background-position: 50% 300%;
 }

@@ -1,5 +1,8 @@
+img {
+    opacity: 0;
+}
 .dnd-animo, .dnd-animo-children > * {
-    //visibility: hidden;
+    visibility: visible;
 }
 .dnd_container {
     width: 100%;
