@@ -443,7 +443,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="dnd_section_dd  top5 dnd-parallax section_with_header" data-background_image="/images/fon8.png" data-parallax="0.3" style="background-color:#ffffff;background-image:url(/images/fon8.png);">
+	<section class="dnd_section_dd  top5 dnd-parallax section_with_header" id="top5">
 		<header>
 			<div class="dnd_container">
 				<h3><span class="two stand">Что даст вам консультация?</span></h3></div>
@@ -463,7 +463,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="dnd_section_dd no_padding top6" style="background-color:#e7e8ec;">
+	<section class="dnd_section_dd no_padding top6" id="top6">
 		<div class="dnd_section_content">
 			<div class="dnd_container">
 				<div class="dnd_column_dd_span4 biege">
@@ -490,7 +490,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="contact" class="dnd_section_dd section-mail dnd-parallax section_with_header" data-background_image="/images/fon6.png" data-parallax="0.7" style="background-color:#fdfcf2;background-image:url(/images/fon6.png);">
+	<section id="contact" class="dnd_section_dd section-mail dnd-parallax section_with_header">
 		<header>
 			<div class="dnd_container">
 				<h3><span class="two stand">Оставьте отзыв или задайте вопрос</span></h3></div>
@@ -559,15 +559,18 @@
 		jQuery(document).ready(function($) {
 			$(window).bind('scroll',function(e){
 			    parallaxScroll();
-			}); 
+			});
+			var scroll_last; 
 			function parallaxScroll(){
 			    var scrolled = $(window).scrollTop();
-			    if (scrolled<350)
-			    	$('#about').css('background-position','50%'+(0-(scrolled*.25))+'%');
-			    $('#top2').css('background-position','50%'+(0+(scrolled*.25))+'%');
-			    $('#top3').css('background-position','50%'+(300+(scrolled*2))+'%');
-			    $('#top4').css('background-position','50%'+(400+(scrolled*1.25))+'%');
-			    $('#top5').css('background-position','50%'+(0-(scrolled*1.25))+'%');
+			    if (scroll_last != scrolled){
+			    	scroll_last=scrolled;
+				    $('#about').css('background-position','50%'+(0-(scrolled*.25))+'%');
+				    $('#top2').css('background-position','50%'+(0+(scrolled*.25))+'%');
+				    $('#top3').css('background-position','50%'+(300+(scrolled*2))+'%');
+				    $('#top4').css('background-position','50%'+(400+(scrolled*1.25))+'%');
+				    //$('#top5').css('background-position','50%'+(0-(scrolled*1.25))+'%');
+				}
 			}
 
 			setTimeout( function (){

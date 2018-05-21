@@ -2249,6 +2249,7 @@ span.one, span.two, span.three {
     background-color:#f7f4e5;
     background-image:url(/images/home_03.png);
     background-position: 50% 0%;
+    padding-top: 60px;
 }
 #top2{
     background-color:#ffffff;
@@ -2265,4 +2266,19 @@ span.one, span.two, span.three {
     background-color:#f7f4e5;
     background-image:url(/images/fon3.png);
     background-position: 50% 300%;
+}
+
+#top5{
+    background-color:#ffffff;
+    background-image:url(/images/fon8.png);
+    background-attachment: scroll;
+    background-position: 42% 33%;
+}
+#top6{
+    background-color:#e7e8ec;
+}
+#contact{
+    background-color:#fdfcf2;
+    background-image:url(/images/fon6.png);
+    background-attachment: scroll;
 }
