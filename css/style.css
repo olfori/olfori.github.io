@@ -680,13 +680,13 @@ nav .menu_social {
     float: right;
     height: 26px;
     line-height: 26px;
-    margin-left: 5px;
+    margin-left: 3px;
     margin-top: 14px;
     text-align: center;
     width: 26px;
 }
 nav .menu_social:last-of-type {
-    margin-left: 22px;
+    margin-left: 5px;
 }
 nav .menu_social:hover {
     border-color: #e42382;
@@ -2138,11 +2138,12 @@ span.one, span.two, span.three {
 .cont {
     float: left;
     font-size: 24px;
+
 }
 .cont span {
     display: inline-block;
     line-height: 25px;
-    margin-right: 50px;
+    margin-right: 10px;
     vertical-align: middle;
 }
 .cont b {
@@ -2183,7 +2184,7 @@ span.one, span.two, span.three {
 .top4 h3 {
     margin-bottom: 0 !important;
     margin-left: 40%;
-    margin-top: 30px;
+    margin-top: 5px;
     padding-bottom: 0;
 }
 .top4 .dnd_column_dd_span9 span {
@@ -2214,6 +2215,7 @@ span.one, span.two, span.three {
 }
 .foot_menu {
     float: left;
+    margin-top: 10px;
 }
 .foot_menu .widget_nav_menu ul li {
     float: left;
@@ -2281,4 +2283,13 @@ span.one, span.two, span.three {
     background-color:#fdfcf2;
     background-image:url(/images/fon6.png);
     background-attachment: scroll;
+}
+#abdev_back_to_top{
+    background-image:url(/images/up_arrow.png);
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+}
+
+.dnd_section_content{
+    padding-top: 35px;
 }
