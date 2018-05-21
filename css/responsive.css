@@ -38,9 +38,9 @@
 	}
 
 	nav .menu_social{
-		float: none;
+		float: right;
 		display: inline-block;
-		margin: 20px 3px !important;
+		margin: 12px 3px !important;
 	}
 
 	nav > ul{
@@ -225,8 +225,10 @@
   display:none;
 }
 .margin-right80 {
-    margin-left: 0;
-
+    margin-left: -110;
+}
+.margin-left80 {
+    margin-left: -90px;
 }
 .top1 h3 {
     margin-left: 0;

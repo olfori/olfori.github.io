@@ -2130,7 +2130,7 @@ span.one, span.two, span.three {
     margin-top: 10px;
 }
 .margin-right80 {
-    margin-left: -60px;
+    margin-left: -87px;
     margin-top: 10px;
 }
 .right {
@@ -2263,19 +2263,19 @@ span.one, span.two, span.three {
 #top3{
     background-color:#ffffff;
     background-image:url(/images/fon4.png);
-    background-position: 50% 0%;
+    background-position: 50% -200%;
 }
 #top4{
     background-color:#f7f4e5;
     background-image:url(/images/fon3.png);
-    background-position: 50% 0%;
+    background-position: 50% -250%;
 }
 
 #top5{
     background-color:#ffffff;
     background-image:url(/images/fon8.png);
     background-attachment: scroll;
-    background-position: 50% 0%;
+    background-position: 43% 40%;
 }
 #top6{
     background-color:#e7e8ec;
@@ -2297,4 +2297,20 @@ span.one, span.two, span.three {
 
 #id_img_top{
     vertical-align:bottom;
+}
+
+.menu_social_youtube{
+    background-image:url(/images/yt.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.menu_social_vk{
+    background-image:url(/images/vk.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.menu_social_facebook{
+    background-image:url(/images/fb.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
