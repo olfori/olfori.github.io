@@ -563,7 +563,7 @@
 			var scroll_last; 
 			function parallaxScroll(){
 			    var scrolled = $(window).scrollTop();
-			    if (scroll_last != scrolled){
+			    if (scroll_last != scrolled && $(document).width()>768){
 			    	scroll_last=scrolled;
 				    $('#about').css('background-position','50%'+(0-(scrolled*.25))+'%');
 				    $('#top2').css('background-position','50%'+(0+(scrolled*.25))+'%');
