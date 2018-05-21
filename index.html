@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
 <html lang="ru-RU">
 
 <head>
@@ -391,11 +391,11 @@
 		<div class="dnd_section_content">
 			<div class="dnd_container">
 				<div class="dnd_column_dd_span3 "></div>
-				<div class="dnd_column_dd_span3 "><a href="#" target="_self" class="dnd-button dnd-button_green dnd-button_normal dnd-button_medium mono margin-left80">Обо мне</a></div>
+				<div class="dnd_column_dd_span3 "><a href="#contact" target="_self" class="dnd-button dnd-button_green dnd-button_normal dnd-button_medium mono margin-left80 go_to">Обо мне</a></div>
 				<div class="dnd_column_dd_span3 ">
-					<div class="dnd-animo img_top" data-animation="fadeInUp" data-duration="1000" data-delay="0"><img src="/images/home_01_03.png" alt=""></div>
+					<div class="dnd-animo img_top"><img id="id_img_top" src="/images/home_01_03.png" alt=""></div>
 				</div>
-				<div class="dnd_column_dd_span3 "><a href="#" class="dnd-button dnd-button_green dnd-button_normal dnd-button_medium margin-right80 button_cons">Запишись на консультацию</a></div>
+				<div class="dnd_column_dd_span3 "><a href="#comment" class="dnd-button dnd-button_green dnd-button_normal dnd-button_medium margin-right80 button_cons go_to">Запишитесь на консультацию</a></div>
 			</div>
 		</div>
 	</section>
@@ -435,7 +435,7 @@
 		<div class="dnd_section_content">
 			<div class="dnd_container">
 				<div class="dnd_column_dd_span4 "></div>
-				<div class="dnd_column_dd_span4 "><a href="#" class="dnd-button dnd-button_green dnd-button_normal dnd-button_medium button_cons">Запишись на консультацию</a></div>
+				<div class="dnd_column_dd_span4 "><a href="#comment" class="dnd-button dnd-button_green dnd-button_normal dnd-button_medium button_cons go_to">Запишитесь на консультацию</a></div>
 				<div class="dnd_column_dd_span4 "></div>
 			</div>
 		</div>
@@ -445,7 +445,7 @@
 			<div class="dnd_container">
 				<h3><span class="three stand">Как проходит консультация?</span></h3></div>
 		</header>
-		<div class="dnd_section_content">
+		<div class="dnd_section_content" id="top4_content">
 			<div class="dnd_container">
 				<div class="dnd_column_dd_span3 "></div>
 				<div class="dnd_column_dd_span9 "><span style="color: #a79589; font-size: 12pt;">В комфортной обстановке вы получите понимание и</span> <span class="two mid">ПОДДЕРЖКУ. </span> <span style="color: #a79589; font-size: 12pt;">Моя задача, помочь вам увидеть вашу ситуацию в новом свете и найти варианты решения</span> <span class="two mid"> ВАШИХ ПРОБЛЕМ. </span> <span style="color: #a79589; font-size: 12pt;">Вас не будут поучать, осуждать или навязывать свое мнение. Вы почувствуете, что вас </span> <span class="two mid"><span class="two mid"><span class="two mid">СЛЫШАТ И ПОНИМАЮТ.</span></span>
@@ -468,9 +468,9 @@
 				<div class="dnd_column_dd_span6 ">
 					<div class="dnd-animo " data-animation="fadeInDown" data-duration="1000" data-delay="0">
 						</p>
-						<div style="text-align: center;"><span style="font-size: 12pt; color: #a79589;">Выговорившись и поделившись своими болью и страхом, своими переживаниями, вы ощутите легкость и внутренний подъем. А понимание, что делать, придаст вам сил.   </span></div>
+						<div style="text-align: center;"><span style="font-size: 12pt; color: #a79589;">Выговорившись и поделившись своими болью и страхом, своими переживаниями, вы ощутите <span class="three stand">легкость</span> и внутренний подъем. А <span class="three stand">понимание</span>, что делать, <span class="three stand">придаст вам сил.</span></span></div>
 						<p>
-					</div><a href="#" class="dnd-button dnd-button_green dnd-button_normal dnd-button_medium button_cons">Запишись на консультацию</a></div>
+					</div><a href="#comment" class="dnd-button dnd-button_green dnd-button_normal dnd-button_medium button_cons go_to">Запишитесь на консультацию</a></div>
 				<div class="dnd_column_dd_span3 ">
 					<div class="dnd-animo " data-animation="fadeInRight" data-duration="1000" data-delay="0"><img src="/images/dev3.png" alt=""></div>
 				</div>
@@ -545,9 +545,9 @@
 	</section>
 	<footer id="abdev_main_footer">
 		<div class="container">
-			
 			<a href="#abdev_main_slider" class="go_to" id="abdev_back_to_top" title="Back to top"><i class="entypo-arrow-up7"></i></a>
 			<div id="footer_copyright"> Сайт разработан студией Olf </div>
+
 			<!-- Yandex.Metrika counter -->
 			<script type="text/javascript" >
 			    (function (d, w, c) {
@@ -577,6 +577,7 @@
 			</script>
 			<noscript><div><img src="https://mc.yandex.ru/watch/46776957" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 			<!-- /Yandex.Metrika counter -->
+
 		</div>
 	</footer>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -607,7 +608,7 @@
 		    });
 			setTimeout( function (){
 			    	$('img').animate({'opacity':'1'},500);
-			    }, 2000);
+			    }, 1000);
 		});
 	</script>
 

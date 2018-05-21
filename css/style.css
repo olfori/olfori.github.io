@@ -2121,8 +2121,9 @@ span.one, span.two, span.three {
     text-align: right;
 }
 .img_top {
-    margin-left: -30px;
-    margin-top: -100px;
+    margin-left: -20px;
+    margin-top: -38px;
+    position:absolute;
 }
 .margin-left80 {
     margin-left: 80px;
@@ -2225,7 +2226,7 @@ span.one, span.two, span.three {
     border-radius: 3px;
     color: #fff;
     font-family: "AGOpus-Normal_" !important;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     padding: 5px 10px;
     text-transform: uppercase;
@@ -2262,34 +2263,38 @@ span.one, span.two, span.three {
 #top3{
     background-color:#ffffff;
     background-image:url(/images/fon4.png);
-    background-position: 50% 300%;
+    background-position: 50% 0%;
 }
 #top4{
     background-color:#f7f4e5;
     background-image:url(/images/fon3.png);
-    background-position: 50% 300%;
+    background-position: 50% 0%;
 }
 
 #top5{
     background-color:#ffffff;
     background-image:url(/images/fon8.png);
     background-attachment: scroll;
-    background-position: 42% 33%;
+    background-position: 50% 0%;
 }
 #top6{
     background-color:#e7e8ec;
 }
-#contact{
+#comment{
     background-color:#fdfcf2;
     background-image:url(/images/fon6.png);
-    background-attachment: scroll;
+    //background-attachment: scroll;
 }
 #abdev_back_to_top{
     background-image:url(/images/up_arrow.png);
-    background-position: 50% 40%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 
-.dnd_section_content{
+#top4_content{
     padding-top: 35px;
+}
+
+#id_img_top{
+    vertical-align:bottom;
 }
