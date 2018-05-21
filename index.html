@@ -524,7 +524,7 @@
 		<div class="dnd_section_content">
 			<div class="dnd_container">
 				<div class="dnd_column_dd_span12 ">
-					<div id="dnd_google_map_1" data-map_type="ROADMAP" data-lat="50.426364" data-lng="30.5302741" data-zoom="17" data-scrollwheel="0" data-maptypecontrol="1" data-pancontrol="1" data-zoomcontrol="1" data-scalecontrol="1" data-markertitle="Центр психологии Нины Турчиновой" data-markericon="" data-markercontent="ул. Евгения Коновальца(Щорса), 32Б" data-markerlat="50.426364" data-markerlng="30.5302741" class="dnd_google_map" style="height:300px;width:100%;"></div>
+					<div id="dnd_map_1" style="height:300px;width:100%;"></div>
 				</div>
 			</div>
 		</div>
@@ -546,6 +546,35 @@
 				</div>
 			</div> <a href="#" id="abdev_back_to_top" title="Back to top"><i class="entypo-arrow-up7"></i></a>
 			<div id="footer_copyright"> Сайт разработан студией Olf </div>
+			<!-- Yandex.Metrika counter -->
+			<script type="text/javascript" >
+			    (function (d, w, c) {
+			        (w[c] = w[c] || []).push(function() {
+			            try {
+			                w.yaCounter46776957 = new Ya.Metrika({
+			                    id:46776957,
+			                    clickmap:true,
+			                    trackLinks:true,
+			                    accurateTrackBounce:true,
+			                    webvisor:true
+			                });
+			            } catch(e) { }
+			        });
+
+			        var n = d.getElementsByTagName("script")[0],
+			            s = d.createElement("script"),
+			            f = function () { n.parentNode.insertBefore(s, n); };
+			        s.type = "text/javascript";
+			        s.async = true;
+			        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+			        if (w.opera == "[object Opera]") {
+			            d.addEventListener("DOMContentLoaded", f, false);
+			        } else { f(); }
+			    })(document, window, "yandex_metrika_callbacks");
+			</script>
+			<noscript><div><img src="https://mc.yandex.ru/watch/46776957" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+			<!-- /Yandex.Metrika counter -->
 		</div>
 	</footer>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -566,7 +595,6 @@
 				    //$('#top5').css('background-position','50%'+(0-(scrolled*1.25))+'%');
 				}
 			}
-
 			setTimeout( function (){
 			    	$('img').animate({'opacity':'1'},500)
 			    }, 1000);
