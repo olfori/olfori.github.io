@@ -697,13 +697,13 @@
 		    });
 			setTimeout( function (){ $('img').animate({'opacity':'1'},500); }, 1000);
 			
-			$(function(){
+			$(function(){		//Всплывающая подсказка на картинках 
 				$("[data-tooltip]").mousemove(function (eventObject) {
 					$data_tooltip = $(this).attr("data-tooltip");
 					$("#tooltip").html($data_tooltip)
 					.css({ 
-						"top" : eventObject.pageY + 5,
-						"left" : eventObject.pageX + 5
+						"top" : eventObject.pageY + 15,
+						"left" : eventObject.pageX -125
 						})
 					.show();
 					}).mouseout(function () {
