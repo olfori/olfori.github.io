@@ -2247,28 +2247,32 @@ span.one, span.two, span.three {
 #abdev_main_slider {
     display: none;
 }
-
+/* My settings */
 #about{
     background-color:#f7f4e5;
     background-image:url(/images/home_03.png);
     background-position: 50% 0%;
     padding-top: 60px;
+    background-attachment: scroll;
 }
 #top2{
     background-color:#ffffff;
     background-image:url(/images/fon2.png);
     background-position: 50% 0%;
+    background-attachment: scroll;
 }
 
 #top3{
     background-color:#ffffff;
     background-image:url(/images/fon4.png);
     background-position: 50% -200%;
+    background-attachment: scroll;
 }
 #top4{
     background-color:#f7f4e5;
     background-image:url(/images/fon3.png);
     background-position: 50% -250%;
+    background-attachment: scroll;
 }
 
 #top5{
