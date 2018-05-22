@@ -219,41 +219,62 @@
 		line-height: 100px;
 	}
 }
+
 @media (max-width: 768px){
-
-.img_top {
-  display:none;
-}
-.margin-right80 {
-    margin-left: 80px;
-}
-.margin-left80 {
-    margin-left: 80px;
-}
-.top1 h3 {
-    margin-left: 0;
-}
-#abdev_main_header {
-    box-shadow: none;
-}
-
-#about {
-    background-position: 32% 0%;
-    padding-top: 5px;
-}
-.lar {
-    font-size: 36px !important;
-}
-.stand {
-    font-size: 26px !important;
-}
-.dnd_column_dd_span4 {
-	float: none;
-	width: 100%;
-	height: auto;
-	margin-left: 0% !important;
-}
-.dnd_column_dd_span3 {
-	float: none !important;
-}
+	.img_top {
+	  display:none;
 	}
+	.margin-right80 {
+	    margin-left: 80px;
+	}
+	.margin-left80 {
+	    margin-left: 80px;
+	}
+	.top1 h3 {
+	    margin-left: 0;
+	}
+	#abdev_main_header {
+	    box-shadow: none;
+	}
+
+	#about {
+	    background-position: 32% 0%;
+	    padding-top: 5px;
+	}
+	.lar {
+	    font-size: 36px !important;
+	}
+	.stand {
+	    font-size: 26px !important;
+	}
+	.dnd_column_dd_span4 {
+		float: none;
+		width: 100%;
+		height: auto;
+		margin-left: 0% !important;
+	}
+	.dnd_column_dd_span3 {
+		float: none !important;
+	}
+	.top4 h3 {
+	    margin-left: 0%;
+	}
+	#ABdev_menu_toggle{
+		display: block;
+		height: 50px;
+		width: 50px;
+		position: fixed;
+		right: 5px;
+		top: 5px;
+		z-index: 9999999;
+		color: #fff;
+		font-size: 30px;
+		line-height: 50px;
+		text-align: center;
+		background: rgba(0,0,0,0.5);
+		background-image: url(/images/mbut.png);
+	}
+	.dnd_column_dd_span6 {
+    width: 75%;
+	}
+}
