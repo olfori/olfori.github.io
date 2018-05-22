@@ -1600,15 +1600,17 @@ nav > ul > .current-menu-item > a, nav > ul > .current-post-ancestor > a, nav > 
 }
 .wpcf7 input {
     border-radius: 2px;
-    height: 55px;
+    height: 40px;
     margin-top: 0;
-    padding: 21px 10px;
+    padding: 10px 10px;
+    font-size: 16px;
 }
 .wpcf7 textarea {
     border-radius: 2px;
-    height: 122px;
+    height: 110px;
     margin-bottom: 5px;
     padding: 18px 10px;
+    font-size: 16px;
 }
 .wpcf7-submit {
     background: #e42382 none repeat scroll 0 0 !important;
@@ -2247,6 +2249,7 @@ span.one, span.two, span.three {
 #abdev_main_slider {
     display: none;
 }
+
 /* My settings */
 #about{
     background-color:#f7f4e5;
@@ -2266,13 +2269,12 @@ span.one, span.two, span.three {
     background-color:#ffffff;
     background-image:url(/images/fon4.png);
     background-position: 50% -200%;
-    background-attachment: scroll;
 }
 #top4{
     background-color:#f7f4e5;
     background-image:url(/images/fon3.png);
     background-position: 50% -250%;
-    background-attachment: scroll;
+
 }
 
 #top5{
@@ -2287,7 +2289,6 @@ span.one, span.two, span.three {
 #comment{
     background-color:#fdfcf2;
     background-image:url(/images/fon6.png);
-    //background-attachment: scroll;
 }
 #abdev_back_to_top{
     background-image:url(/images/up_arrow.png);
@@ -2317,4 +2318,47 @@ span.one, span.two, span.three {
     background-image:url(/images/fb.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
+}
+
+.top7{
+    background-color:#f7f4e5;
+    background-image:url(/images/fon4.png);
+    background-position: 50% -80%;
+}
+.dnd_column_dd_span12{
+    padding-top: 40px;
+    max-width: 1060px;
+    margin-left: auto !important;
+    margin-right: auto;
+    float: none !important;
+}
+.dnd_column_dd_span12 p{
+    font-size: 12pt;
+    color: #a79589;
+    text-align: justify;
+}
+.dnd_column_dd_span12 .dnd_column_dd_span4{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 310px;
+}
+.dnd_column_dd_span5 p{
+    font-size: 12pt;
+    color: #a79589;
+}
+#tooltip {
+  z-index: 9999;
+  position: absolute;
+  display: none;
+  top:0px;
+  left:0px;
+  width: 250px;
+  background-color: #fff;
+  padding: 5px 10px 5px 10px;
+  color: #000;
+  border: 1px solid #888;
+  border-radius: 5px; 
+  box-shadow: 0 1px 2px #555;
+  box-sizing: ;
 }

@@ -260,7 +260,7 @@
 	    margin-left: 0%;
 	}
 	#ABdev_menu_toggle{
-		display: block;
+		display: none;
 		height: 50px;
 		width: 50px;
 		position: fixed;
