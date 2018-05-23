@@ -2362,3 +2362,7 @@ span.one, span.two, span.three {
   box-shadow: 0 1px 2px #555;
   box-sizing: ;
 }
+
+#comments{
+    background-color: #f7f4e5;
+}

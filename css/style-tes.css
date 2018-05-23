@@ -9,7 +9,7 @@
   position: relative;
   width: 90%;
   max-width: 768px;
-  background-color: #f7f4e5;
+  background-color: #fdfcf2;
   margin: 2em auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -105,7 +105,7 @@
   left: 0;
 }
 .flex-direction-nav li:last-child {
-  right: 0;
+  right: -20px;
 }
 .flex-direction-nav li a {
   display: block;
@@ -118,6 +118,7 @@
   -webkit-transition: background-color 0.2s;
   -moz-transition: background-color 0.2s;
   transition: background-color 0.2s;
+  background-color: #e7e8ec;
 }
 .no-touch .flex-direction-nav li a:hover {
   background-color: #323234;
