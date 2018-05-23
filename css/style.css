@@ -2352,8 +2352,7 @@ span.one, span.two, span.three {
 #sfoto{
     float: right;
     margin: 10px 10px 20px 20px;
-    max-width: 300px;
-    width: 40%;
+    max-width: 200px;
 }
 #side_about{
     position: absolute;
