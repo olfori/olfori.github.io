@@ -18,7 +18,7 @@
 }
 
 .cd-testimonials {
-  color: #a79589;
+  color: #7c7c7c;
   text-align: center;
 }
 .cd-testimonials::after {
@@ -347,4 +347,8 @@
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+li{
+  list-style-type: none;
 }
