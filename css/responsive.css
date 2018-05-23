@@ -276,4 +276,7 @@
 	.dnd_column_dd_span6 {
     width: 75%;
 	}
+	.dnd_column_dd_span5 {
+    width: 70%;
+}
 }

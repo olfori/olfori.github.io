@@ -41,7 +41,7 @@ img {
     vertical-align: middle;
     width: auto;
 }
-input[type="text"], input[type="password"], input[type="email"], textarea {
+input[type="text"], input[type="password"], input[type="email"], textarea, select, option {
     border: 1px solid #d9d9d9;
     box-sizing: border-box;
     font-family: inherit;
@@ -216,7 +216,7 @@ dd {
 .dnd_section_dd header p {
     padding: 0 220px;
 }
-input[type="text"], input[type="password"], input[type="email"] {
+input[type="text"], input[type="password"], input[type="email"], select, option {
     margin-bottom: 15px;
     padding: 13px 11px;
 }
@@ -1598,7 +1598,7 @@ nav > ul > .current-menu-item > a, nav > ul > .current-post-ancestor > a, nav > 
     border-color: #e42382;
     color: #fff;
 }
-.wpcf7 input {
+.wpcf7 input, select, option {
     border-radius: 2px;
     height: 40px;
     margin-top: 0;
@@ -1669,7 +1669,7 @@ div.wpcf7 img.ajax-loader {
     position: relative;
     top: -20px;
 }
-.widget input {
+.widget input, select, option {
     margin-bottom: 0;
 }
 aside .widget {
@@ -2175,7 +2175,7 @@ span.one, span.two, span.three {
 .section-mail h3 {
     margin: 0 !important;
 }
-.mono input[type="submit"] {
+.mono input[type="submit"]{
     font-family: "Monotype-Corsiva-Regular",sans-serif !important;
     height: auto;
     padding: 10px 20px !important;
@@ -2343,9 +2343,23 @@ span.one, span.two, span.three {
     float: none;
     width: 310px;
 }
-.dnd_column_dd_span5 p{
+.dnd_column_dd_span5 p, .dnd_column_dd_span6 p{
     font-size: 12pt;
     color: #a79589;
+}
+
+#cost .dnd_column_dd_span6{
+    float: right;
+}
+#cost .dnd_column_dd_span6 p{
+    text-align: right;
+}
+#cost footer p{
+    font-size: 12pt;
+    color: #739c88;
+}
+#cost *{
+    line-height: 1.5;
 }
 
 #comments{
@@ -2368,4 +2382,14 @@ span.one, span.two, span.three {
     bottom: -20px;
     width: 30%;
     background-color: rgba(93,120,228,0.09);
+}
+
+#cost {
+    background-color: #e3eae6;
+}
+
+select, option{
+    color: #7c7c7c;
+    margin-bottom: 16px;
+    border: 1px solid #d9d9d9;
 }
