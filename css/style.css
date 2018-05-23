@@ -2334,6 +2334,9 @@ span.one, span.two, span.three {
     color: #a79589;
     text-align: justify;
 }
+.dnd_column_dd_span12 h3{
+    text-align: center;
+}
 .dnd_column_dd_span12 .dnd_column_dd_span4{
     margin-left: auto;
     margin-right: auto;
@@ -2347,6 +2350,10 @@ span.one, span.two, span.three {
 
 #comments{
     background-color: #f7f4e5;
+    background-image:url(/images/fon-comments.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50% bottom;
 }
 
 #sfoto{
