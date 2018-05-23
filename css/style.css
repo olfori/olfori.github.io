@@ -2268,12 +2268,12 @@ span.one, span.two, span.three {
 #top3{
     background-color:#ffffff;
     background-image:url(/images/fon4.png);
-    background-position: 50% -200%;
+    background-position: 50% 0%;
 }
 #top4{
     background-color:#f7f4e5;
     background-image:url(/images/fon3.png);
-    background-position: 50% -250%;
+    background-position: 50% 0%;
 
 }
 
