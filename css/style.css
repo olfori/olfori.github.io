@@ -1843,7 +1843,7 @@ aside .widget select {
 }
 .widget_nav_menu ul li {
     list-style: outside none none;
-    padding-left: 14px;
+    padding-left: 9px;
     position: relative;
 }
 .widget_nav_menu ul li a {
