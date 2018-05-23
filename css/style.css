@@ -2236,9 +2236,6 @@ span.one, span.two, span.three {
 .foot_menu > ul li::before, .widget div > ul li::before {
     content: none;
 }
-.top7 {
-    margin-top: 30px;
-}
 .none {
     display: none;
 }
@@ -2347,22 +2344,22 @@ span.one, span.two, span.three {
     font-size: 12pt;
     color: #a79589;
 }
-#tooltip { /* Для всплывающих подсказок */
-  z-index: 9999;
-  position: absolute;
-  display: none;
-  top:0px;
-  left:0px;
-  width: 250px;
-  background-color: #fff;
-  padding: 5px 10px 5px 10px;
-  color: #000;
-  border: 1px solid #888;
-  border-radius: 5px; 
-  box-shadow: 0 1px 2px #555;
-  box-sizing: ;
-}
 
 #comments{
     background-color: #f7f4e5;
+}
+
+#sfoto{
+    float: right;
+    margin: 10px 10px 20px 20px;
+    max-width: 300px;
+    width: 40%;
+}
+#side_about{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: -20px;
+    width: 30%;
+    background-color: rgba(93,120,228,0.09);
 }
