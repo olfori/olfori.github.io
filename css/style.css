@@ -2358,7 +2358,7 @@ span.one, span.two, span.three {
     font-size: 12pt;
     color: #739c88;
 }
-#cost *{
+#top7 *,#about_me *, #cost *{
     line-height: 1.5;
 }
 
