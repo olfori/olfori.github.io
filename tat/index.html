@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GS Mining</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/static/img/favicon-32.21e68ebb2261.png" sizes="32x32">
+    <link rel="icon" href="/static/img/favicon-48.5f630b823e75.png" sizes="48x48">
+    <link rel="icon" href="/static/img/favicon-96.3fe024f3c7ab.png" sizes="96x96">
+    <link rel="icon" href="/static/img/favicon-144.85cca93bd449.png" sizes="144x144">
+    <link href="/static/v2/css/lib/bootstrap-mini.b871b10906a4.css" rel="stylesheet">
+    <link href="/static/v2/css/lib/jquery-ui.min.b423dd67c9da.css" rel="stylesheet">
+    <link href="/static/v2/css/lib/jquery.fancybox.min.c873f743d0cc.css" rel="stylesheet">
+    <link href="/static/v2/css/lib/slick.f38b2db10e01.css" rel="stylesheet">
+    <link href="/static/v2/css/lib/tippy.ba0645d4d26f.css" rel="stylesheet">
+    <link href="/static/v2/css/style.06e08c2688e6.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <nav class="menu js-menu">
+        <div class="menu-items">
+            <div class="menu-item menu--logo">
+                <div class="tbl menu--tbl">
+                    <div class="cll">
+                        <a href="/" style="display:inline-flex;">
+                            <img src="/static/v2/img/gs.png" alt="">
+                            <svg width="110" height="50" viewBox="0 0 78 11" class="hidden-xs hidden-sm">
+                                <path class="menu-logo" d="M143.686,59.77a3.465,3.465,0,0,0-3.655,3.657,3.563,3.563,0,0,0,3.565,3.806,3.936,3.936,0,0,0,2.667-1.109V64.88H144.63V63.217H148l-0.015,4.3a1.215,1.215,0,0,0-.666,0,6.66,6.66,0,0,0-.982.349A4.571,4.571,0,0,1,143.252,69a5.237,5.237,0,0,1-5.214-5.515A5.366,5.366,0,0,1,143.522,58a6.062,6.062,0,0,1,3.955,1.349l-0.959,1.438A4.652,4.652,0,0,0,143.686,59.77Zm-13.574,2.922a18.168,18.168,0,0,1-.884-1.648H129.2s0.1,1.019.1,1.648v6.129H127.37V58.181H129.3l4.03,6.145c0.39,0.629.884,1.649,0.884,1.649h0.03s-0.105-1.019-.105-1.649V58.181h1.918v10.64h-1.918Zm-7.251-4.511h1.932v10.64h-1.932V58.181Zm-8.541,4.511a17.9,17.9,0,0,1-.884-1.648h-0.03s0.1,1.019.1,1.648v6.129h-1.933V58.181h1.933l4.03,6.145c0.39,0.629.884,1.649,0.884,1.649h0.03s-0.105-1.019-.105-1.649V58.181h1.918v10.64H118.35Zm-7.251-4.511H109v10.64h-1.932V58.181Zm-4.523,4.511c0-.63.1-1.648,0.1-1.648h-0.028l-0.11.18h-0.03s-0.344,1.034-.584,1.649l-1.723,4.121H98.5l-1.723-4.121c-0.24-.615-0.584-1.663-0.584-1.663h-0.03l-0.059-.06c0.026,0.276.095,1.036,0.095,1.544v6.129H94.264V58.181H96.7l2.1,5.26c0.24,0.63.524,1.559,0.524,1.559h0.03s0.284-.929.524-1.559l2.1-5.26h2.5v10.64h-1.933V62.692ZM84.969,69a5.193,5.193,0,0,1-3.641-1.454l1.049-1.454a4.24,4.24,0,0,0,2.637,1.124A1.33,1.33,0,0,0,86.572,66c0-2.023-4.959-1.6-4.959-4.916,0-1.874,1.558-3.087,3.626-3.087a4.679,4.679,0,0,1,3.116,1.139L87.5,60.714a3.733,3.733,0,0,0-2.337-.929A1.371,1.371,0,0,0,83.545,61c0,1.978,4.959,1.468,4.959,4.856C88.5,67.578,87.246,69,84.969,69Zm-5.8-1.487a3.475,3.475,0,0,0-.87.349A4.571,4.571,0,0,1,75.214,69,5.237,5.237,0,0,1,70,63.486,5.366,5.366,0,0,1,75.484,58a6.061,6.061,0,0,1,3.955,1.349L78.48,60.789a4.652,4.652,0,0,0-2.832-1.019,3.465,3.465,0,0,0-3.655,3.657,3.563,3.563,0,0,0,3.566,3.806,3.936,3.936,0,0,0,2.667-1.109V64.88H76.593V63.217h3.371l0.1,4.3A2.4,2.4,0,0,0,79.171,67.514Z" transform="translate(-70 -58)" /> </svg> 
+                                <img src="/static/v2/img/logo-m.02d4d67fcff5.svg" class="visible-xs visible-sm"> </a>
+                    </div>
+                    <div class="cll">
+                        <div class="menu-hamburger js-menu-hamburger"> <span></span> <span></span> <span></span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item menu-links_holder menu--desktop">
+                <ul class="menu-links">
+                    <li class="menu-link"> <a href="/" class="menu-href">Главная</a> </li>
+                    <li class="menu-link"> <a href="/" class="menu-href">Маркетинг</a> </li>
+                    <li class="menu-link"> <a href="/" class="menu-href">Видео инструкции</a> </li>
+                    <li class="menu-link"> <a href="/" class="menu-href">Полезные ссылки</a> </li>
+                </ul>
+            </div>
+            <div class="menu-item menu--desktop">
+            </div>
+        </div>
+    </nav>
+
+    <section class="main bg-1 js-main-section">
+        <canvas id="gly"></canvas>
+        <div class="container">
+            <div class="tbl w100p js-main">
+                <div class="cll">
+                    <h1 class="heading-0 heading-main">Ваш <br>личный бизнес <br>в сфере <br>майнинга криптовалюты</h1> 
+                </div>
+            </div>
+            <div id="img_rotate">
+                <img src="/static/v2/img/rotate.png" alt="">
+            </div>
+        </div>
+        <div class="container js-bot">
+            <h2><span>Все гораздо проще, чем вам кажется</span></h2>
+        </div>
+        <div class="container-fluid dn_line"></div>
+    </section>
+
+    <section class="section-tab js-immature js-mature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="calc-header">Что такое <br>майнинг криптовалют?</h5>
+                </div>
+                <div class="col-md-6 p_light">
+                    <p>Майнинг или добыча криптовалют — это процесс образования или выпуска новых монет. Некоторые монеты майнятся (биткоин, ZCash), некоторые нет, поскольку новые монеты не предусмотрены (рипл, neo).</p>
+                    <p>Если появляются новые монеты, то ими кто-то начинает обладать - майнеры Значит, им есть какая-либо финансовая выгода от этого.</p>
+                    <p>Однако, чтобы монету получить, для начала нужно что-то отдать — закупить оборудование, снять помещение, продумать охлаждение, нанять настройщиков, охрану, и плюс после всего - оплатить расход электричества⚡. Довольно затратный список дел.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-6 bg_coins">
+                    <h5 class="calc-header">Что же предлагает <br>наша компания GS?</h5>
+                </div>
+                <div class="col-md-6 p_light">
+                    <p>Компания GS Mining предоставляет для всех желающих услуги по добыче криптовалюты.</p>
+                    <p>Модель бизнеса заключается в АРЕНДЕ оборудования для майнинга, которое находится на наших  европейских площадках и обслуживается нашими специалистами. </p>
+                    <p>Данная модель обеспечивает для вас простоту и доступность нашего бизнеса. </p>
+                    <p>Компания берет на себя все хлопоты в организации технических процессов, а вы, без лишних трудозатрат, становитесь владельцем собственного бизнеса в самой перспективной сфере нашего времени.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-tab js-mature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="c_iframe">
+                        <iframe width="460" height="230" src="https://www.youtube.com/embed/w_O8PsR0uoI?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+                        <div class="bv_button">
+                            <a class="button6" href="/">Присоединиться</a>
+                        </div>
+                    </div>
+                    <div class="c_iframe">
+                        <iframe width="460" height="226" src="https://www.youtube.com/embed/k7rbjoeBndo?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tbl w100p fquote">
+                        <div class="fquote-img">
+                            <img src="/static/v2/img/foto.jpg">
+                            <h5 class="fquote-header"><span>Приветствую! <br>Меня зовут Татьяна</span></h5>
+                        </div>
+                        <div class="tbl w100p fquote_text p_light">
+                            <p>Есть отличная информация, которой я хочу 
+                                поделиться на этой странице со всеми, кому интересно развиваться вместе 
+                                с новыми технологиями и при этом выстроить долгосрочный пассивный доход.</p>
+                            <p>Речь идёт  о  новой международной перспективной майнинг компании 
+                                <span style="color:#c88d55;">Global Smart Mining</span>, 
+                                которую я активно развиваю по всему миру.</p> 
+                            <p>Вы можете изучить информацию самостоятельно, а также  связаться со мной  удобным для Вас способом:</p>
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <p>Skype:<br><br>
+                                        <a href="skype:tatyana.rogova4?call" target="_blank"><i class="fab fa-skype fa-3x"></i></a></p>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <p>WhatsApp:<br><br>
+                                        <a href="whatsapp://send?phone=+306948811456" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a></p>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <p>Viber:<br><br>
+                                        <a href="viber://chat?number=+306948811456" target="_blank"><i class="fab fa-viber fa-3x"></i></a></p>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <p>Telegram:<br><br>
+                                        <a href="https://t.me/tatianarogova" target="_blank"><i class="fab fa-telegram fa-3x"></i></a></p>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <p>Instagram:<br><br>
+                                        <a href="/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a></p>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <p>ВК: <br><br>    
+                                        <a href="https://vk.com/tatiana.rogova" target="_blank"><i class="fab fa-vk fa-3x"></i></a></p>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"> <img src="/static/v2/img/footer-logo.278332ea9bad.png" alt="Footer Logo" class="footer-logo"> </div>
+                <div class="col-sm-9">
+                    <div class="row footer-hr">
+                        <div class="col-sm-8">
+                            <div class="dn_button"> 
+                                <a class="button6" href="/">Присоединиться</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>53 Business Centre, Sir Adrian
+                                <br> Dingli Street, Sliema, Malta</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8"> </div>
+                        <div class="col-md-4">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/v2/js/lib/jquery.min.4f252523d4af.js"></script>
+    <script src="/static/v2/js/lib/jquery-ui.min.c15b1008dec3.js"></script>
+    <script src="/static/v2/js/lib/jquery.ui.touch-punch.min.700b877cd3ad.js"></script>
+    <script src="/static/v2/js/lib/jquery.fancybox.min.1fc6ecaf7ea4.js"></script>
+    <script src="/static/v2/js/lib/slick.min.d5a61c749e44.js"></script>
+    <script src="/static/v2/js/lib/moment.084396f4103c.js"></script>
+    <script src="/static/v2/js/lib/tippy.min.093a9c3bf737.js"></script>
+    <script src="static/v2/js/quark.js" type="text/javascript" charset="utf-8"></script>
+    <script src="static/v2/js/jQueryRotate.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+    $(function() {
+        $(window).on('scroll', function() {
+            if($(window).scrollTop() !== 0) {
+                $('.js-menu').addClass('menu--fixed');
+            } else {
+                $('.js-menu').removeClass('menu--fixed');
+            }
+        });
+        $('.js-menu-hamburger').on('click', function() {
+            $('.js-menu').toggleClass('open');
+        });
+        $(document).on('click', '.js-lang-tip li', function() {
+            $.post('/i18n/setlang/', {
+                language: $(this).data('lang'),
+                csrfmiddlewaretoken: 'A0uwcQf0irNz4crO4dohEP8Tzu9887xw6xLTrlOljop4dx528pSxMdD00Bd8HofM'
+            }, function() {
+                location.reload(true);
+            });
+        });
+        tippy('.js-lang', {
+            position: 'bottom',
+            html: $('.js-lang-tip').get(0),
+            arrow: true,
+            trigger: 'click',
+            interactive: true,
+            popperOptions: {
+                modifiers: {
+                    preventOverflow: {
+                        boundariesElement: 'viewport'
+                    },
+                    flip: {
+                        enabled: false
+                    }
+                }
+            },
+            onShown: function() {
+                $('.js-lang-tip').css('visibility', 'visible');
+            },
+            offset: '-57, 4'
+        });
+        if(window.location.search && window.location.search.indexOf('invite') > -1) {
+            var invite_id = window.location.search.split('=')[1];
+            $('#id_referrer_uid').val(invite_id).parent().hide();
+            $('a').each(function() {
+                var href = $(this).attr('href');
+                if(href.indexOf('www') === -1 && href.indexOf('http') === -1 && href.indexOf('mailto') === -1) {
+                    $(this).attr('href', href + '?invite=' + invite_id);
+                }
+            });
+        }
+    });
+    </script>
+    <script>
+    $(function() {
+        $('.js-main-user').on('click', function() {
+            if($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $('.js-mature').hide();
+                $('.js-immature').hide();
+                if($(window).width() < 768) $('.js-main-user1, .js-main-user2').show();
+            } else {
+                $('.js-main-user').removeClass('active');
+                $(this).addClass('active');
+                if($(this).data('type') === 'immature') {
+                    $('.js-mature').hide();
+                    $('.js-immature').show();
+                    if($(window).width() < 768) {
+                        $('.js-main-user2').hide();
+                        $('.js-main-user1').show();
+                    }
+                } else {
+                    $('.js-immature').hide();
+                    $('.js-mature').show();
+                    if($(window).width() < 768) {
+                        $('.js-main-user1').hide();
+                        $('.js-main-user2').show();
+                    }
+                }
+            }
+        });
+
+        function spacify(num) {
+            var str = num.toString().split('.');
+            if(str[0].length >= 3) {
+                str[0] = str[0].replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+            }
+            if(str[1] && str[1].length >= 3) {
+                str[1] = str[1].replace(/(\d{3})/g, '$1 ');
+            }
+            return str.join('.');
+        }
+        $('.js-slider-input').on('keyup focus', function() {
+            var val = parseInt(($(this).val() + '').replace(' ', ''), 10);
+            if(val > 100000) val = 100000;
+            if(val) {
+                $(this).val(spacify(val));
+                $('.js-slider').slider('value', val);
+            }
+        });
+        $('.js-slider-input').on('blur', function() {
+            var val = parseInt(($(this).val() + '').replace(' ', ''), 10);
+            if(!val || val < 500) val = 500;
+            $(this).val(spacify(val));
+            $('.js-slider').slider('value', val);
+        });
+        $('.js-slider').slider({
+            range: "min",
+            step: 1,
+            min: 500,
+            max: 100000,
+            create: function() {
+                $('.js-slider-input').val($(this).slider('value'));
+            },
+            slide: function(e, ui) {
+                $('.js-slider-input').val(spacify(ui.value));
+            }
+        });
+        $('.js-calc').on('click', function() {
+            var value = $('.js-slider-input').val().replace(' ', '').trim();
+            var dayProfit = +((((365 * value / 1000) + (0.4 * value)) / 12) / 30).toFixed(2),
+                monthProfit = +(((365 * value / 1000) + (0.4 * value)) / 12).toFixed(2),
+                totalProfit = +(value * 2.2).toFixed(2);
+            $('.js-calc-day').text(spacify(dayProfit));
+            $('.js-calc-month').text(spacify(monthProfit));
+            $('.js-calc-total').text(spacify(totalProfit));
+            $('.js-calc-list').hide();
+            $('.js-calc-results').show();
+        });
+        $('.js-calc-close').on('click', function() {
+            $('.js-calc-results').hide();
+            $('.js-calc-list').show();
+        });
+        $('.js-captcha input').attr('placeholder', 'Code').css({
+            'padding-left': '20px'
+        }).addClass('');
+        $('.js-login-captcha input').attr('placeholder', 'Code').css({
+            'padding-left': '20px'
+        });
+        if($('.errorlist').length) {
+            $('html, body').animate({
+                scrollTop: $('.login').offset().top
+            }, 500);
+        }
+        $('.js-captcha, .js-login-captcha').css({
+            'padding-top': '13px'
+        });
+        $('.js-captcha img, .js-login-captcha img').css({
+            'float': 'left',
+            'margin-top': '5px',
+            'margin-right': '26px'
+        });
+        $('.js-captcha input, .js-login-captcha input').css({
+            'width': '30%'
+        });
+        $('body').on('resize-this', function() {
+            if($(window).height() > $('.js-bot').height() + $('.heading-main').height() + 350) {
+                $('.js-main-section').css('height', $(window).height());
+                $('.js-bot').addClass('main-fixed');
+            } else {
+                $('.js-main-section').css('height', '');
+                $('.js-bot').removeClass('main-fixed');
+            }
+        });
+        $('body').trigger('resize-this');
+        $(window).on('resize', function() {
+            $('body').trigger('resize-this');
+        });
+        $("#id_phone").keydown(function(e) {
+            if($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110]) !== -1 || (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) || (e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) || (e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) || (e.keyCode >= 35 && e.keyCode <= 39)) {
+                return;
+            }
+            if((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                e.preventDefault();
+            }
+        });
+        $("#id_phone").keyup(function() {
+            if($(this).val().indexOf('+') === -1) {
+                $(this).val('+' + $(this).val());
+            }
+        });
+    });
+    </script>
+    <script>
+    $(function() {
+        var angle = 0;
+        setInterval(function(){
+              angle+=1;
+              $("#img_rotate").rotate({
+                angle:0,
+                animateTo:360,
+                duration: 2000
+            });
+        },3500);
+    });
+    </script>
+</body>
+
+</html>
