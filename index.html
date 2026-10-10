@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
-  <head>
-    <title>Soul technologies Технологии души</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My First VR</title>
+  <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <!-- Пол -->
+    <a-plane
+      position="0 0 -4"
+      rotation="-90 0 0"
+      width="20" height="20"
+      color="#7BC8A4">
+    </a-plane>
 
-  <body>
-		<h1>Технологии души</h1>
-		<p>Скоро здесь появится сайт</p>
-	</body>
+    <!-- Вращающийся куб -->
+    <a-box
+      position="-1 1.5 -3"
+      color="#4CC3D9"
+      animation="property: rotation;
+                 to: 0 360 0;
+                 loop: true;
+                 dur: 4000;
+                 easing: linear">
+    </a-box>
+
+    <!-- Сфера -->
+    <a-sphere
+      position="1 1.5 -4"
+      radius="0.7"
+      color="#EF2D5E">
+    </a-sphere>
+
+    <!-- Небо -->
+    <a-sky color="#ECECEC"></a-sky>
+
+    <!-- Камера игрока -->
+    <a-entity position="0 1.6 0">
+      <a-camera></a-camera>
+    </a-entity>
+  </a-scene>
+</body>
 </html>
